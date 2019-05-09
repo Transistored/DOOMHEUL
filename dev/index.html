@@ -1,0 +1,12 @@
+<h1>Test synthèse vocale</h1>
+<h3>Vous devriez entendre 'Bonjour, et bienvenue sur doomheul'</h3>
+<script type="text/javascript">
+	function readOutLoud(){
+		 var u = new SpeechSynthesisUtterance();
+		 u.text = "bonjour pd";
+		 u.lang = "fr-FR";
+		 u.rate = 1.1;
+		 speechSynthesis.speak(u);
+	}
+</script>
+<button onclick="readOutLoud()">Click me</button>
